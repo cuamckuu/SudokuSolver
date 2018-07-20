@@ -6,11 +6,10 @@
 #include <QMessageBox>
 
 namespace Ui {
-class SudokuSolver;
+    class SudokuSolver;
 }
 
-class SudokuSolver : public QWidget
-{
+class SudokuSolver : public QWidget {
     Q_OBJECT
 
 public:
@@ -18,9 +17,7 @@ public:
     ~SudokuSolver();
 
 private slots:
-
     void on_sovleButton_clicked();
-
     void on_restartButton_clicked();
 
 private:
@@ -28,6 +25,5 @@ private:
 };
 
 bool SolveSudoku(int,int);
-
 
 #endif // SUDOKUSOLVER_H
